@@ -10,11 +10,5 @@ coverage:
 	python3 -m coverage run --source=tda -m nose
 	python3 -m coverage html
 
-dist:
-	python3 setup.py sdist bdist_wheel
-
-release:
-	python3 -m twine upload dist/*
-
 clean:
 	rm -rf build dist docs-build tda_api.egg-info __pycache__
